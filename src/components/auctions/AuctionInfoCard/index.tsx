@@ -215,7 +215,7 @@ const AuctionInfoCard: React.FC<Props> = (props) => {
     return () => clearInterval(interval)
   }, [endTimeTimestamp])
   const auctionSymbolBiddingToken = auctionInfo.symbolBiddingToken.slice(0, 7)
-  const auctionSymbolAuctioningToken = auctionInfo.symbolAuctioningToken.slice(0, 7)
+  const auctionSymbolAuctioningToken = auctionInfo.symbolAuctioningToken.slice(0, 12)
   return (
     <Wrapper
       to={`/auction?auctionId=${auctionInfo.auctionId}&chainId=${Number(
