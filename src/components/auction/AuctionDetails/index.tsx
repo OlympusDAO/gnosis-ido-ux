@@ -512,7 +512,7 @@ const AuctionDetails = (props: Props) => {
                       size={'18px'}
                       token={{
                         address: derivedAuctionInfo?.auctioningToken.address,
-                        symbol: derivedAuctionInfo?.auctioningToken.symbol,
+                        symbol: derivedAuctionInfo?.biddingToken.symbol,
                       }}
                     />
                     <TokenText>{auctioningTokenDisplay}</TokenText>
