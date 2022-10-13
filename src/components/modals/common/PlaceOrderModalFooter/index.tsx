@@ -136,7 +136,7 @@ const SwapModalFooter: React.FC<Props> = (props) => {
           <div>
             <TokenLogo
               size="24px"
-              token={{ address: auctioningToken.address, symbol: auctioningToken.symbol }}
+              token={{ address: biddingToken.address, symbol: biddingToken.symbol }}
             />
           </div>
         </Value>

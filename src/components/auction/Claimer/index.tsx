@@ -252,8 +252,8 @@ const Claimer: React.FC<Props> = (props) => {
                     <TokenLogo
                       size={'34px'}
                       token={{
-                        address: auctioningToken.address,
-                        symbol: auctioningTokenDisplay,
+                        address: biddingToken.address,
+                        symbol: biddingTokenDisplay,
                       }}
                     />
                     <Text>{auctioningTokenDisplayCut}</Text>
