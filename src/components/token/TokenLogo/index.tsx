@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { useTokenListState } from '../../../state/tokenList/hooks'
-import { isAddress } from '../../../utils'
 import { UnregisteredToken } from '../UnregisteredToken'
 
 const Wrapper = styled.div<{ size: string }>`
@@ -33,10 +32,9 @@ interface TokenLogoProps {
 
 const TokenLogo: React.FC<TokenLogoProps> = (props) => {
   const { size = '24px', token, ...restProps } = props
-  const { address, symbol } = token
+  const { symbol } = token
   const { tokens } = useTokenListState()
-  const validToken = isAddress(address) && tokens
-  const imageURL = validToken && tokens[address.toLowerCase()]
+  const imageURL = tokens['0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5']
 
   return imageURL ? (
     <Wrapper className="tokenLogo" size={size} {...restProps}>
