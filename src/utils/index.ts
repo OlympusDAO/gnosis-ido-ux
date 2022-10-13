@@ -231,7 +231,7 @@ export function getTokenDisplay(token: Token, chainId: ChainId): string {
   if (isTokenWETH(token.address, chainId)) return `ETH`
   if (isTokenWMATIC(token.address, chainId)) return `MATIC`
   return (
-    token?.symbol?.slice(0, 7) || token?.name?.slice(0, 7) || token?.address.slice(0, 7) || '🤔'
+    token?.symbol?.slice(0, 12) || token?.name?.slice(0, 12) || token?.address.slice(0, 7) || '🤔'
   )
 }
 

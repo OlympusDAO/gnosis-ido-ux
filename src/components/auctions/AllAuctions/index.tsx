@@ -618,7 +618,7 @@ const AllAuctions = (props: Props) => {
                           <TableCell key={j}>
                             <span>
                               {cell.column.Header === 'Selling' || cell.column.Header === 'Buying'
-                                ? cell.value.slice(0, 7)
+                                ? cell.value.slice(0, 12)
                                 : cell.value}
                             </span>
                             <span>{cell.render('Header')}</span>

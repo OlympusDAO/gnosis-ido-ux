@@ -146,7 +146,7 @@ const Claimer: React.FC<Props> = (props) => {
     [auctioningToken, chainId],
   )
 
-  const auctioningTokenDisplayCut = auctioningTokenDisplay.slice(0, 7)
+  const auctioningTokenDisplayCut = auctioningTokenDisplay.slice(0, 12)
 
   const isLoading = useMemo(
     () =>
