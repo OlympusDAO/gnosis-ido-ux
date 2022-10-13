@@ -232,8 +232,8 @@ const AuctionInfoCard: React.FC<Props> = (props) => {
       <Details>
         <TokenIcons
           auctioningToken={{
-            address: auctionInfo.addressAuctioningToken,
-            symbol: auctionInfo.symbolAuctioningToken,
+            address: auctionInfo.addressBiddingToken,
+            symbol: auctionInfo.symbolBiddingToken,
           }}
           biddingToken={{
             address: auctionInfo.addressBiddingToken,

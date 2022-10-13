@@ -511,7 +511,7 @@ const AuctionDetails = (props: Props) => {
                     <TokenLogo
                       size={'18px'}
                       token={{
-                        address: derivedAuctionInfo?.auctioningToken.address,
+                        address: derivedAuctionInfo?.biddingToken.address,
                         symbol: derivedAuctionInfo?.biddingToken.symbol,
                       }}
                     />
