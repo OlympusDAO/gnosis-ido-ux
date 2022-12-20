@@ -23,9 +23,13 @@ export function useInterestingAuctionInfo(
         if (!additionalServiceApi) {
           throw new Error('missing dependencies in useInterestingAuctionInfo callback')
         }
-        const auctionInfo = await additionalServiceApi.getMostInterestingAuctionDetails(
+        const allAuctionInfo = await additionalServiceApi.getMostInterestingAuctionDetails(
           params?.closedAuctions,
         )
+        const auctionInfo = allAuctionInfo.filter(
+          (auction) => auction.addressBiddingToken === '0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5',
+        )
+
         if (cancelled) return
         setMostInterestingAuctions(auctionInfo)
       } catch (error) {
